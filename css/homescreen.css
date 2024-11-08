@@ -1,0 +1,26 @@
+
+
+h1 {
+    font-size: 4.5em;
+    text-align: center;
+    margin-top: 10px;
+}
+h2 {
+    font-size:1.5em;
+    text-align: center;
+    margin-top: -100px;
+}
+.button-wrapper {
+    position: relative;  
+    text-align: center;  
+    margin-top: 100px;
+}
+
+#started {
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    height: 70px;
+    max-width: 175px;
+    font-size: 18px;
+    font-weight: bold;
+} 
