@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    background-image: url('media/3807731.jpg');
     padding: 0;
     height: 100%;
     width: 100%;
@@ -9,6 +10,7 @@ body {
     justify-content: center;
     align-items: center; 
     background-color: #222;
+    opacity: 0.8;
 }
 
 
@@ -35,7 +37,7 @@ h2 {
 .button {
     height: 10vh;
     width: 10vw;
-    font-size: 1vw;
+    font-size: 1.1vw;
     margin-right: 4vh;
     margin-top: 5vh;
     font-weight: bold;
