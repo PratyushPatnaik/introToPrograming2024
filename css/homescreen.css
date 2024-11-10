@@ -1,4 +1,4 @@
-/* General body styling */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,9 +6,9 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    background-color: #222; /* Background color for the body */
+    justify-content: center;
+    align-items: center; 
+    background-color: #222;
 }
 
 
@@ -17,41 +17,38 @@ h1 {
 }
 
 h2 {
-    font-size: 2vw; 
+    font-size: 2vw;
     text-align: center;
-    margin-top: -12vh; 
+    margin-top: -12vh;
     font-family: 'Gloria Hallelujah', sans-serif;
     color: #f1f1f1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    line-height: 1.4; 
+    line-height: 1.4;
 }
 
-
-.button1 {
-    position: relative;
-    text-align: center;
-    margin-top: 5vh; 
+.button-wrapper {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 5vh;
 }
 
-/* Styling for the button */
-#started {
-    position: absolute;
-    transform: translate(-50%, -50%);
+.button {
     height: 10vh;
     width: 10vw;
-    margin-top: 3vh; 
-    font-size: 1vw; 
+    font-size: 1vw;
+    margin-right: 4vh;
+    margin-top: 5vh;
     font-weight: bold;
-    padding: 0.5vh; 
+    padding: 2vh 2vw;
     background-color: #606d63;
     color: white;
-    border: none; 
-    border-radius: 5px; 
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
-
-#started:hover {
-    background-color: #0056b3; /* Darker color on hover */
+.button:hover {
+    background-color: #959ea8; 
 }
+
