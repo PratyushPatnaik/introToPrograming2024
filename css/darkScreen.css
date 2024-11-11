@@ -1,0 +1,113 @@
+body {
+    background-image: url('../media/dark_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-position: 0px -130px;
+}
+
+.mc {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 350px;
+    left: 400px;
+}
+
+.backpack {
+    position: absolute;
+    height: 130px;
+    top: 400px;
+    left: 230px;
+}
+
+.inv {
+    position: absolute;
+    top: 570px;
+    left: 140px;
+}
+
+.inv-item {
+    background-color: rgb(222,184,135);
+    padding: 15px 30px 50px 30px;
+    display: inline;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(205,133,63);
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.text-item {
+    display: inline-flex;
+    max-width: 250px;
+    padding: 10px 30px;
+    background-color: green;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+.text-item:first-child {
+    margin-right: 380px;
+}
+
+.decision {
+    background-color: rgb(33, 148, 77);
+    position: absolute; 
+    top: 300px;
+    right: 480px;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+
+.choice {
+    position: absolute;
+    top: 450px;
+    margin-left: 650px;
+}
+
+.choice-item {
+    background-color: rgb(15, 193, 71);
+    border: none;
+    padding: 15px 20px;
+    margin-right: 100px;
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgreen;
+    border-style: solid;
+}
+
+.nextScreen {
+    padding: 15px 20px;
+    position: absolute; 
+    top: 550px; 
+    right: 100px;
+    background-color: greenyellow;
+    color: green;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(6, 94, 6)
+}
