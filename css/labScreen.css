@@ -7,6 +7,17 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+button {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
 }
 
 .mc {

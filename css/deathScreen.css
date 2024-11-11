@@ -89,6 +89,17 @@ body {
     border-style: solid;
     border-color: darkgreen;
     border-style: solid;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+button {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
 }
 
 .nextScreen {
