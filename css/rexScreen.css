@@ -1,5 +1,5 @@
 body {
-    background-image: url('../media/light_bg_1920.jpg');
+    background-image: url('../media/dark_bg.png');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -7,7 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-position: 0px -300px;
+    background-position: 0px -130px;
 }
 
 .mc {
@@ -74,7 +74,7 @@ body {
     background-color: rgb(33, 148, 77);
     position: absolute; 
     top: 50px;
-    right: 480px;
+    margin-left: 50px;
     color: white;
     padding: 15px 20px;
     font-weight: bold;
@@ -85,10 +85,11 @@ body {
     border-color: darkgreen;
 }
 
-.bush {
+.rex {
     position: absolute; 
     top: 320px; 
-    right: 270px;
+    right: 250px;
+    transform: scale(0.95);
 }
 
 .choice {

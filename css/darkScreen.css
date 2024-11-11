@@ -1,5 +1,5 @@
 body {
-    background-image: url('../media/light_bg_1920.jpg');
+    background-image: url('../media/dark_bg.png');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -7,7 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-position: 0px -300px;
+    background-position: 0px -130px;
 }
 
 .mc {
@@ -42,38 +42,30 @@ body {
 }
 
 .text {
-    background-color: green;
     color: white;
     position: absolute;
-    padding: 20px 30px;
     top: 50px;
     left: 200px;
-    max-width: 400px;
+}
+
+.text-item {
+    display: inline-flex;
+    max-width: 250px;
+    padding: 10px 30px;
+    background-color: green;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
     border-color: darkgreen;
 }
-
-.nextScreen {
-    background-color: aliceblue;
-    padding: 15px 20px;
-    position: absolute; 
-    top: 550px; 
-    right: 100px;
-    background-color: greenyellow;
-    color: green;
-    font-weight: bold;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(6, 94, 6)
+.text-item:first-child {
+    margin-right: 380px;
 }
 
 .decision {
     background-color: rgb(33, 148, 77);
     position: absolute; 
-    top: 50px;
+    top: 300px;
     right: 480px;
     color: white;
     padding: 15px 20px;
@@ -85,15 +77,9 @@ body {
     border-color: darkgreen;
 }
 
-.bush {
-    position: absolute; 
-    top: 320px; 
-    right: 270px;
-}
-
 .choice {
     position: absolute;
-    top: 230px;
+    top: 450px;
     margin-left: 650px;
 }
 
@@ -110,4 +96,18 @@ body {
     border-style: solid;
     border-color: darkgreen;
     border-style: solid;
+}
+
+.nextScreen {
+    padding: 15px 20px;
+    position: absolute; 
+    top: 550px; 
+    right: 100px;
+    background-color: greenyellow;
+    color: green;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(6, 94, 6)
 }
