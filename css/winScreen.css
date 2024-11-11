@@ -1,0 +1,70 @@
+body {
+    background-image: url('../media/dark_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-position: 0px -130px;
+}
+
+.mc {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 350px;
+    left: 400px;
+}
+
+.backpack {
+    position: absolute;
+    height: 130px;
+    top: 400px;
+    left: 230px;
+}
+
+.inv {
+    position: absolute;
+    top: 570px;
+    left: 140px;
+}
+
+.inv-item {
+    background-color: rgb(222,184,135);
+    padding: 15px 30px 50px 30px;
+    display: inline;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(205,133,63);
+}
+
+.text {
+    background-color: green;
+    color: white;
+    position: absolute;
+    padding: 20px 30px;
+    top: 50px;
+    left: 200px;
+    max-width: 400px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+
+.time_machine {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+}
+.tm_btn {
+    position: absolute;
+    top: 263px;
+    right: 155px;
+    background-color: greenyellow;
+    border: 0;
+    padding: 5px 20px;
+}
