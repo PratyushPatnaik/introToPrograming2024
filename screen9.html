@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/ranScreen.css" rel="stylesheet" type="text/css" />
+    <link href="css/rexScreen.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +14,7 @@
   </head>
   <body>
     <img src="media/main_character.png" class="mc" />
+
     <img src="media/backpack.png" class="backpack" />
 
     <div class="inv">
@@ -22,9 +23,20 @@
     </div>
 
     <div class="text">
-      <h1>Luckily you got away, that was a close one!</h1>
+      <h1>It's a MASSIVE T-REX!</h1>
     </div>
 
-    <button class="nextScreen">Follow Trail</button>
+    <p class="decision">Do you...?</p>
+    <div class="choice">
+      <a href="screen10 (death).html">
+        <button class="choice-item">Fight it</button>
+      </a>
+      <a href="screen 9 (run away) .html">
+        <button class="choice-item">Run away</button>
+      </a>
+    </div>
+
+    <img class="rex" src="media/t_rex.png" />
+    <button class="stop">STOP</button>
   </body>
 </html>

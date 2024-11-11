@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-
-
-<title>Jurassic Journey</title>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/screen5.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
- </head>
-
-  <body>
-    <style>
-      body {
-        background-image: url(media/smalldinousaur\ screens.jpg);
-        background-repeat: no-repeat;
-      }
-
-      img {
-        display: block;
-      }
-    </style>
-    <img class="img-mc" src="media/main character.png" />
-
-    <button class="runbutton">Run Away</button>
-    <button class="fightbutton">Fight it</button>
-
-    <p class="loudSound">You hear a loud sound.....</p>
-    <p class="decision">Do you...?</p>
-
-    <img
-      class="dino-img"
-      src="media/png-clipart-cute-little-dinosaur-green-cartoon-thumbnail-removebg-preview.png"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/treeScreen.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
     />
-    <img class="backpack-img" src="media/backpack.removebg-preview.png" />
+    <title>Jurassic Journey</title>
+  </head>
+  <body>
+    <img src="media/main_character.png" class="mc" />
 
-    <p class="foodinv">Food: None</p>
-    <p class="itemsinv">Items: None</p>
-    <button class="nextScreen">Follow Trail</button>
+    <img src="media/backpack.png" class="backpack" />
+
+    <div class="inv">
+      <p class="inv-item">Food: none</p>
+      <p class="inv-item">Items: none</p>
+    </div>
+
+    <div class="text">
+      <h1>You see a small tree!</h1>
+    </div>
+
+    <p class="decision">Do you...?</p>
+    <div class="choice">
+      <button class="choice-item">Cut it down</button>
+      <button class="choice-item">Leave it alone</button>
+    </div>
+
+    <img class="tree" src="media/Tree.png" />
+
+    <a href="screen7.html">
+      <button class="nextScreen">Follow Trail</button>
+    </a>
+    <button class="stop">STOP</button>
   </body>
 </html>

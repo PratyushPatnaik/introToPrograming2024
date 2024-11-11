@@ -14,21 +14,23 @@ body {
   position: relative;
   top: 160px;
   left: 400px;
+  transform: scaleX(-1);
 }
 
-.loudSound {
-  background-color: rgb(33, 148, 77);
+.whereAmI {
+  background-color: green;
   position: relative;
   top: -200px;
   left: -400px;
   color: white;
+  font-family: "VT323", monospace;
   padding-top: 15px;
   padding-left: 50px;
   padding-bottom: 15px;
   padding-right: 50px;
   font-weight: bold;
   font-size: 30px;
-  border-radius: 80px;
+  border-radius: 10px;
   border-width: 10px;
   border-color: darkgreen;
   border-style: solid;
@@ -38,7 +40,7 @@ body {
   width: 100px;
   height: 100px;
   position: relative;
-  top: 100px;
+  top: 65px;
   right: 870px;
 }
 
@@ -48,6 +50,7 @@ body {
   border-width: 5px;
   border-style: solid;
   border-color: rgb(205, 133, 63);
+  font-family: "VT323", monospace;
   height: 3vw;
   width: 5vw;
   font-size: 1.1vw;
@@ -73,6 +76,7 @@ body {
   height: 3vw;
   width: 5vw;
   font-size: 1.1vw;
+  font-family:"VT323", monospace;
   margin-right: 3vh;
   margin-top: 5vh;
   padding: 2vh 2vw;
@@ -100,6 +104,19 @@ body {
   font-weight: bold;
   border-radius: 30px;
   border-width: 10px;
+  font-family: "VT323", monospace;
   border-style: solid;
   border-color: rgb(6, 94, 6);
+}
+
+.stop {
+  position: absolute; top: 25px; 
+  background: red;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-left: 25px;
+  font-family: "VT323", monospace;
+  padding-bottom: 20px;
+  padding-right: 25px;
 }

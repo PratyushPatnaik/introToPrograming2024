@@ -121,3 +121,16 @@ button {
     border-color: darkgreen;
     border-style: solid;
 }
+
+.stop {
+    position: absolute; top: 25px; left: 700px;
+    background: red;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 25px;
+    font-family: "VT323", monospace;
+    padding-bottom: 20px;
+    padding-right: 25px;
+  }
+  
