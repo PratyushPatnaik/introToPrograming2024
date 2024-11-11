@@ -1,4 +1,8 @@
 body {
+    background-image: url(media/smalldinousaur\ screens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  /* Ensures the background image covers the whole screen */
+    background-position: center 100%;  /* Centers the image */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -6,7 +10,7 @@ body {
     min-height: 100vh; /* centers content vertically */
 }
 
-.nigerundayo {
+.runbutton {
     background-color: rgb(15, 193, 71);
     position: relative; 
     top: -100px; 
@@ -26,7 +30,7 @@ body {
 
 }
 
-.tatakai {
+.fightbutton {
     background-color: rgb(15, 193, 71);
     position: relative; top: -100px; left: 750px;
     border: none;
