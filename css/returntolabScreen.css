@@ -1,0 +1,92 @@
+body {
+    background-image: url('../media/lab.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+button {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.mc {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 350px;
+    left: 400px;
+}
+
+.text {
+    background-color: green;
+    color: white;
+    position: absolute;
+    padding: 10px 30px;
+    top: 50px;
+    left: 200px;
+    max-width: 400px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+
+.time_machine {
+    position: absolute;
+    top: 230px;
+    right: 300px;
+}
+.tm_btn {
+    position: absolute;
+    top: 263px;
+    right: 155px;
+    background-color: greenyellow;
+    border: 0;
+    padding: 5px 20px;
+}
+
+
+.backpack {
+    width: 100px;
+    height: 100px;
+    position: relative; top: 100px; right: 550px;
+}
+
+.foodinv {
+    background-color: rgb(222,184,135);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    font-family: "VT323", monospace;
+    position: absolute; bottom: 50px; left: 280px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(205,133,63);
+
+}
+
+.itemsinv {
+    background-color: rgb(222,184,135);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    position: absolute; bottom: 50px; left: 70px;
+    font-family: "VT323", monospace;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(205,133,63);   
+}

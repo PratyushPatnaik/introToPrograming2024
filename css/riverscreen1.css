@@ -1,0 +1,127 @@
+body {
+    background-image: url('../media/riverScreen.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-position: 0px -200px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+.img-mc {
+    position: absolute; top: 310px; left: 400px;
+    transform: scaleX(-1);
+
+}
+
+.seeariver {
+    position: absolute; top: 100px; left: 300px;
+    background-color: green;
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-family: "VT323", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    border-width:10px;
+    border-color: darkgreen;
+    border-style: solid;
+}
+
+.materials {
+    position: absolute; top: 100px; left: 700px;
+    background-color: rgb(33, 148, 77);
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-family: "VT323", monospace;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 10px;
+    border-width:10px;
+    border-color: darkgreen;
+    border-style: solid;
+}
+
+
+.buildaboat {
+    position: absolute; right: 200px;
+    background-color: rgb(15, 193, 71);
+    border: none;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    color: purple;
+    font-family: "VT323", monospace;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 20px;
+    border-width:10px;
+    border-color: darkgreen;
+    border-style: solid;
+}
+
+.followthetrail {
+    position: absolute; left: 700px;
+    background-color: rgb(15, 193, 71);
+    border: none;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    color: purple;
+    font-family: "VT323", monospace;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 20px;
+    border-width:10px;
+    border-color: darkgreen;
+    border-style: solid;
+}
+
+.backpack {
+    width: 100px;
+    height: 100px;
+    position: relative; top: 100px; right: 550px;
+}
+
+.foodinv {
+    background-color: rgb(222,184,135);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    font-family: "VT323", monospace;
+    position: absolute; bottom: 50px; left: 280px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(205,133,63);
+
+}
+
+.itemsinv {
+    background-color: rgb(222,184,135);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    position: absolute; bottom: 50px; left: 70px;
+    font-family: "VT323", monospace;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(205,133,63);   
+}
