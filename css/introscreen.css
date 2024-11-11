@@ -1,0 +1,105 @@
+body {
+  background-image: url(media/y.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background image covers the whole screen */
+  background-position: center 100%; /* Centers the image */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* centers content vertically */
+}
+
+.img-mc {
+  position: relative;
+  top: 160px;
+  left: 400px;
+}
+
+.loudSound {
+  background-color: rgb(33, 148, 77);
+  position: relative;
+  top: -200px;
+  left: -400px;
+  color: white;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 15px;
+  padding-right: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 80px;
+  border-width: 10px;
+  border-color: darkgreen;
+  border-style: solid;
+}
+
+.backpack-img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  right: 870px;
+}
+
+.foodinv {
+  background-color: rgb(222, 184, 135);
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(205, 133, 63);
+  height: 3vw;
+  width: 5vw;
+  font-size: 1.1vw;
+  margin-right: 3vh;
+  margin-top: 5vh;
+  padding: 2vh 2vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* Positioning */
+  position: fixed; /* Use 'absolute' if you want it relative to a parent container */
+  bottom: 110px; /* Distance from the bottom */
+  left: 130px; /* Distance from the left */
+}
+
+.itemsinv {
+  background-color: rgb(222, 184, 135);
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(205, 133, 63);
+  height: 3vw;
+  width: 5vw;
+  font-size: 1.1vw;
+  margin-right: 3vh;
+  margin-top: 5vh;
+  padding: 2vh 2vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* Positioning */
+  position: fixed; /* Use 'absolute' if you want it relative to a parent container */
+  bottom: 110px; /* Distance from the bottom */
+  left: 340px; /* Distance from the left */
+}
+
+.nextScreen {
+  background-color: aliceblue;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  position: relative;
+  top: 250px;
+  left: -120px;
+  background-color: greenyellow;
+  color: green;
+  font-weight: bold;
+  border-radius: 30px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(6, 94, 6);
+}
