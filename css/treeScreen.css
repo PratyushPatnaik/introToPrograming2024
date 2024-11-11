@@ -1,5 +1,5 @@
 body {
-    background-image: url('../media/light_bg_1920.jpg');
+    background-image: url('../media/arrivedScreen.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -7,13 +7,13 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-position: 0px -300px;
+    background-position: 0px -120px;
 }
 
 .mc {
     position: absolute;
     transform: scaleX(-1);
-    top: 350px;
+    top: 240px;
     left: 400px;
 }
 

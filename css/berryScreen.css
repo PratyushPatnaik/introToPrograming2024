@@ -7,13 +7,13 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-position: 0px -300px;
+    background-position: 0px -120px;
 }
 
 .mc {
     position: absolute;
     transform: scaleX(-1);
-    top: 350px;
+    top: 240px;
     left: 400px;
 }
 
@@ -56,7 +56,6 @@ body {
 }
 
 .nextScreen {
-    background-color: aliceblue;
     padding: 15px 20px;
     position: absolute; 
     top: 550px; 
