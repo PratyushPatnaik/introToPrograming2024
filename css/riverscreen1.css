@@ -74,7 +74,7 @@ body {
 }
 
 .followthetrail {
-    position: absolute; left: 700px;
+    position: absolute; left: 700px; top: 300px;
     background-color: rgb(15, 193, 71);
     border: none;
     padding-top: 20px;
