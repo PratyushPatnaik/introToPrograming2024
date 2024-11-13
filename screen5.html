@@ -14,12 +14,11 @@
   </head>
   <body>
     <img src="media/main_character.png" class="mc" />
-
     <img src="media/backpack.png" class="backpack" />
 
     <div class="inv">
-      <p class="inv-item">Food: none</p>
-      <p class="inv-item">Items: none</p>
+      <p class="inv-item" id="food">Food: none</p>
+      <p class="inv-item" id="items">Items: none</p>
     </div>
 
     <div class="text">
@@ -28,7 +27,7 @@
 
     <p class="decision">Do you...?</p>
     <div class="choice">
-      <button class="choice-item">Cut it down</button>
+      <button class="choice-item" id="cut-down-tree">Cut it down</button>
       <button class="choice-item">Leave it alone</button>
     </div>
 
@@ -41,5 +40,7 @@
     <a href="screen1.html">
       <button class="stop">STOP</button>
     </a>
+
+    <script src="JavaScript/tree.js"></script>
   </body>
 </html>
