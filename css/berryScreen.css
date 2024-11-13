@@ -21,10 +21,15 @@ button {
   font-size: large;
 }
 
+/* This code positions our main character */
 .mc {
+  /* Position absolute, making it so our main character doesn't change with other elements */
   position: absolute;
+  /* Transform, inverting the main character to make it face forwards */
   transform: scaleX(-1);
+  /* top, which moves the main character up 240 pixels */
   top: 240px;
+  /* left, which moves the main character left 400 pixels */
   left: 400px;
 }
 
