@@ -1,33 +1,33 @@
+/* General styles for the body of the page */
 body {
-    background-image: url('../media/arrivedScreen.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-image: url('../media/arrivedScreen.jpg'); /* Background image for the screen */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-size: 100%; /* Ensures background covers the entire page */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures page takes full viewport height */
     margin: 0;
-    background-position: 0px -120px;
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
+    background-position: 0px -120px; /* Adjusts position of background image */
+    font-family: "VT323", monospace; /* Custom font style */
     font-size: larger;
 }
 
+/* Button styling */
 button {
     font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
     font-size: large;
 }
 
+/* Main character image styling */
 .mc {
     position: absolute;
-    transform: scaleX(-1);
+    transform: scaleX(-1); /* Flips the image horizontally */
     top: 240px;
     left: 400px;
 }
 
+/* Backpack image styling */
 .backpack {
     position: absolute;
     height: 130px;
@@ -35,23 +35,24 @@ button {
     left: 230px;
 }
 
+/* Inventory section styling */
 .inv {
     position: absolute;
     top: 570px;
     left: 140px;
 }
 
+/* Individual inventory item styling */
 .inv-item {
-    background-color: rgb(222,184,135);
+    background-color: rgb(222,184,135); /* Light brown background */
     padding: 15px 30px 50px 30px;
     display: inline;
     margin-right: 30px;
     border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(205,133,63);
+    border: 5px solid rgb(205,133,63); /* Border color for inventory items */
 }
 
+/* Text box for description styling */
 .text {
     background-color: green;
     color: white;
@@ -61,11 +62,10 @@ button {
     left: 200px;
     max-width: 400px;
     border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: darkgreen;
+    border: 5px solid darkgreen; /* Dark green border */
 }
 
+/* "Next Screen" button styling */
 .nextScreen {
     padding: 15px 20px;
     position: absolute; 
@@ -75,13 +75,12 @@ button {
     color: green;
     font-weight: bold;
     border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(6, 94, 6);
+    border: 5px solid rgb(6, 94, 6); /* Darker green border */
 }
 
+/* "Decision" prompt styling */
 .decision {
-    background-color: rgb(33, 148, 77);
+    background-color: rgb(33, 148, 77); /* Dark green background */
     position: absolute; 
     top: 50px;
     right: 480px;
@@ -90,26 +89,27 @@ button {
     font-weight: bold;
     font-size: 25px;
     border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: darkgreen;
+    border: 5px solid darkgreen; /* Border color for decision prompt */
 }
 
+/* Tree image styling */
 .tree {
     position: absolute; 
     top: 300px; 
     right: 330px;
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slightly enlarges the image */
 }
 
+/* Container for choices styling */
 .choice {
     position: absolute;
     top: 230px;
     margin-left: 650px;
 }
 
+/* Individual choice button styling */
 .choice-item {
-    background-color: rgb(15, 193, 71);
+    background-color: rgb(15, 193, 71); /* Bright green background */
     border: none;
     padding: 15px 20px;
     margin-right: 100px;
@@ -117,19 +117,15 @@ button {
     font-weight: bold;
     font-size: 20px;
     border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: darkgreen;
-    border-style: solid;
+    border: 5px solid darkgreen; /* Dark green border */
 }
 
+/* Stop button styling */
 .stop {
-    position: absolute; top: 25px;
+    position: absolute; 
+    top: 25px;
     background: red;
     font-weight: bold;
     font-size: 25px;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-bottom: 20px;
-    padding-right: 25px;
+    padding: 20px 25px; /* Adds padding around the button */
 }

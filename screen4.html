@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Sets the character encoding for the document -->
     <meta charset="UTF-8" />
+    <!-- Sets the viewport to make the website responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links to the CSS file for styling -->
     <link href="css/berryScreen.css" rel="stylesheet" type="text/css" />
+    <!-- Preconnects to Google Fonts to load fonts efficiently -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Links to the Google font "VT323" to use on this page -->
     <link
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
+    <!-- Sets the page title -->
     <title>Jurassic Journey</title>
   </head>
   <body>
+    <!-- Main character image -->
     <img src="media/main_character.png" class="mc" />
 
+    <!-- Backpack image to represent player's inventory -->
     <img src="media/backpack.png" class="backpack" />
 
+    <!-- Inventory display area -->
     <div class="inv">
       <p class="inv-item">Food: none</p>
       <p class="inv-item">Items: none</p>
     </div>
 
+    <!-- Text display area showing the current scene description -->
     <div class="text">
       <h1>You see a berry bush.</h1>
     </div>
 
+    <!-- Prompt for the user to make a decision -->
     <p class="decision">Do you...?</p>
     <div class="choice">
+      <!-- Button to allow user to choose to pick berries -->
       <button class="choice-item">Pick some berries</button>
+      <!-- Button to allow user to choose to leave the bush alone -->
       <button class="choice-item">Leave it alone</button>
     </div>
 
+    <!-- Image of the berry bush in the scene -->
     <img class="bush" src="media/berry_bush.png" />
 
+    <!-- Button to move to the next screen, wrapped in a link to "screen5.html" -->
     <a href="screen5.html">
       <button class="nextScreen">Follow Trail</button>
     </a>
 
+    <!-- Button to stop the game, linking back to "screen1.html" -->
     <a href="screen1.html">
       <button class="stop">STOP</button>
     </a>
