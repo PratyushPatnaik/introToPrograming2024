@@ -1,56 +1,53 @@
-
 body {
-    margin: 0;
-    background-image: url('media/3807731.jpg');
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    background-color: #222;
-    opacity: 0.8;
+  margin: 0;
+  background-image: url("media/3807731.jpg");
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  opacity: 0.8;
 }
 
-
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    font-size: 2vw;
-    text-align: center;
-    margin-top: -12vh;
-    font-family: 'Gloria Hallelujah', sans-serif;
-    color: #f1f1f1;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    line-height: 1.4;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: -13vh;
+  font-family: "Gloria Hallelujah", sans-serif;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  line-height: 1.4;
 }
 
 .button-wrapper {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
 }
 
 .button {
-    height: 10vh;
-    width: 10vw;
-    font-size: 1.1vw;
-    margin-right: 4vh;
-    margin-top: 5vh;
-    font-weight: bold;
-    padding: 2vh 2vw;
-    background-color: #606d63;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  height: 10vh;
+  width: 10vw;
+  font-size: 1.1vw;
+  margin-right: 4vh;
+  margin-top: 5vh;
+  font-weight: bold;
+  padding: 2vh 2vw;
+  background-color: #606d63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #959ea8; 
+  background-color: #959ea8;
 }
-

@@ -76,7 +76,7 @@ body {
   height: 3vw;
   width: 5vw;
   font-size: 1.1vw;
-  font-family:"VT323", monospace;
+  font-family: "VT323", monospace;
   margin-right: 3vh;
   margin-top: 5vh;
   padding: 2vh 2vw;
@@ -110,7 +110,8 @@ body {
 }
 
 .stop {
-  position: absolute; top: 25px; 
+  position: absolute;
+  top: 25px;
   background: red;
   font-weight: bold;
   font-size: 30px;

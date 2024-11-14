@@ -3,70 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/labScreen.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
-    <title>Jurassic Journey</title>
-    <style>
-      /* Add fade-in effect to the body */
-      body.fade {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-      }
-
-      body.fade.show {
-        opacity: 1;
-      }
-
-      /* Additional styling to position the content */
-      .mc {
-        width: 300px;
-        margin: 0 auto;
-        display: block;
-      }
-
-      .text {
-        text-align: center;
-        font-family: "VT323", monospace;
-        color: white;
-      }
-
-      .time_machine {
-        text-align: center;
-        margin-top: 30px;
-      }
-
-      .tm_btn {
-        padding: 10px 20px;
-        font-size: 18px;
-        cursor: pointer;
-      }
-    </style>
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/labScreen.css" />
+    <title>Lab Scene</title>
   </head>
-  <body class="fade">
-    <img src="media/main_character.png" class="mc" />
-
-    <div class="text">
-      <h1>
-        After all your hard work, your time machine is finished! Hopefully it
-        works!
-      </h1>
+  <body>
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          After all my hard work it all comes down to this! Time to test this
+          out...
+        </h1>
+      </div>
+      <div class="text">
+        <h2>Progress</h2>
+      </div>
     </div>
 
-    <a href="screen3.html" class="time_machine">
-      <img src="media/time_machine.png" alt="Time Machine" />
-      <button class="tm_btn">RUN</button>
-    </a>
-    <button class="stop" href="screen1.html">STOP</button>
-    <script>
-      // Wait for the DOM content to be fully loaded, then trigger fade-in
-      document.addEventListener("DOMContentLoaded", function () {
-        document.body.classList.add("show");
-      });
-    </script>
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="10"
+        max="80"
+        style="width: 57vh"
+      ></progress>
+    </div>
+
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
+
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen3.html'"
+    >
+      Test
+    </button>
+
+    <img src="/media/time_machine.png" class="time-machine" />
   </body>
 </html>
