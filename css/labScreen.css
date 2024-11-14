@@ -73,9 +73,9 @@ body::before {
 }
 
 .main-character {
-  transform: scale(1.1); /* scale 1.1x bigger */
-  margin-top: -2vh;
-  margin-left: -6vh; /* Move character left by 10vh */
+  transform: scale(1.3); /* scale 1.1x bigger */
+  margin-top: -1vh;
+  margin-left: 0vh; /* Move character left by 10vh */
 }
 
 .text {
@@ -91,7 +91,7 @@ body::before {
 
 .time-machine {
   position: absolute;
-  right: 42vh; /* Adjust this as needed */
+  right: 45vh; /* Adjust this as needed */
   top: 59%; /* Center vertically in the viewport */
   transform: translateY(-45%) scale(0.9); /* Center vertically and scale up 1.5 times */
   max-width: none; /* Ensure the scale works without restricting width */
@@ -107,6 +107,34 @@ body::before {
 .center-bottom {
   position: fixed;
   bottom: 20px; /* Adjust distance from the bottom */
-  left: 45%;
+  left: 40%;
+}
+
+.nes-btn.is-error {
+  font-size: 1rem; /* Increase font size */
+  padding: 15px 30px; /* Add padding to make it larger */
+  transform: scale(1.2); /* Optional: Additional scaling */
+}
+
+.center-bottom-right {
+  position: fixed;
+  bottom: 20px; /* Adjust distance from the bottom */
+  left: 55%;
   transform: translateX(-90%);
+}
+
+.inventory_blank {
+  position: absolute;
+  top: 62vh;
+  right: -32vh;
+  margin: 10px;
+  transform: scale(1.01); /* Scales the image by 1.5 times */
+}
+
+.inventory-title {
+  position: absolute;
+  bottom: 7vh; /* Adjust the vertical position as needed */
+  right: 11vw; /* Adjust the right position */
+  font-size: 1.5rem; /* Adjust the font size */
+  color: white; /* Adjust the text color */
 }
