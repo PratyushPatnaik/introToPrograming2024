@@ -45,6 +45,7 @@
       src="media/png-clipart-cute-little-dinosaur-green-cartoon-thumbnail-removebg-preview.png"
       class="dino"
       alt="dino"
+      id="dino"
     />
 
     <button
@@ -64,7 +65,7 @@
     </button>
 
     <div class="button-container">
-      <button type="button" class="nes-btn is-warning">Encounter</button>
+      <button type="button" class="nes-btn is-warning" id="encounter">Encounter</button>
       <button type="button" class="nes-btn is-warning">Ignore</button>
     </div>
 
@@ -79,7 +80,12 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
       const pickedBerryImage = document.getElementById("pickedBerryImage");
-  
+      const encounter = document.getElementById("encounter");
+      const dino = document.getElementById("dino");
+      encounter.addEventListener("click", () => {
+        dino.style.display = "none";
+      });
+
       // Check if the berry was picked
       if (localStorage.getItem("pickedBerry") === "true") {
         pickedBerryImage.style.display = "block"; // Show the image if it was picked
