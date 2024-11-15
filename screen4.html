@@ -68,12 +68,17 @@
       <img id="pickedBerryImage" class="berryimage" src="media/berryitself.png" style="display: none;" alt="Picked Berry" />
     </div>
 
-
+    <div id="pickedBerryContainer" style="text-align: center;">
+      <img id="pickedBerryImage" class="berryimage" src="media/berryitself.png" alt="Picked Berry" style="display: none;" />
+    </div>
+    
     <script>
     document.addEventListener("DOMContentLoaded", () => {
+      localStorage.setItem("pickedBerry", "false");
       // Get references to the button and the container
       const pickBerriesButton = document.getElementById("pickBerriesButton");
       const pickedBerryImage = document.getElementById("pickedBerryImage");
+      const pickedBerryContainer = document.getElementById("pickedBerryContainer");
 
       // Add event listener for the "Pick berries" button
       pickBerriesButton.addEventListener("click", () => {
@@ -81,6 +86,7 @@
 
         // Show the picked berry container
         pickedBerryImage.style.display = "block";
+        pickedBerryContainer.style.display = "block";
         console.log("Picked berry container made visible");
 
         // Store information in localStorage for use in later screens
@@ -88,9 +94,7 @@
       });
 
       // Check if the berry was picked when loading the screen
-      if (localStorage.getItem("pickedBerry") === "true") {
-        pickedBerryContainer.style.display = "block";
-      }
+
     });
     </script>
   </body>

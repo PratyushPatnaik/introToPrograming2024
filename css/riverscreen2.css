@@ -173,3 +173,11 @@ body::before {
   width: 200px; /* Optional: adjust width as needed */
   height: auto; /* Maintain aspect ratio */
 }
+
+.berryimage {
+    position: absolute;
+    right: 430px;
+    bottom: 80px;
+    height: 30px;
+    width: 30px;
+  }

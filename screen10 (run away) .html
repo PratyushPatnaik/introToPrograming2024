@@ -8,13 +8,16 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/realwinScreen.css" />
+    <link rel="stylesheet" href="css/screen5.css" />
     <title>Lab Scene</title>
   </head>
   <body>
     <div class="center-container">
       <div class="nes-container is-rounded is-dark">
-        <h1>CONGRATS U BEAT THE GAME!! Thank You for playing</h1>
+        <h1>
+          You go upon your quest to find your time machine when u stumble across
+          a berry bush! What do you do?
+        </h1>
       </div>
       <div class="text">
         <h2>Progress</h2>
@@ -24,7 +27,7 @@
     <div class="bottom-progress-bar">
       <progress
         class="nes-progress is-success"
-        value="15"
+        value="30"
         max="80"
         style="width: 57vh"
       ></progress>
@@ -38,13 +41,14 @@
 
     <h2 class="inventory-title">Inventory</h2>
     <img src="media/bar.png" class="inventory_blank" alt="inventory" />
+    <img src="media/Tree.png" class="tree" alt="tree" />
 
     <button
       type="button"
       class="nes-btn is-primary center-bottom"
-      onclick="window.location.href='screen2.html'"
+      onclick="window.location.href='screen6.html'"
     >
-      Try Again?
+      Continue
     </button>
 
     <button
@@ -52,9 +56,13 @@
       class="nes-btn is-error center-bottom-right"
       onclick="window.location.href='screen1.html'"
     >
-      Home
+      Stop
     </button>
-    <img src="media/time_machine.png" class="time-machine" />
+
+    <div class="button-container">
+      <button type="button" class="nes-btn is-warning">Cut Tree</button>
+      <button type="button" class="nes-btn is-warning">Ignore</button>
+    </div>
 
     <div id="pickedBerryContainer" style="text-align: center;">
       <img id="pickedBerryImage" class="berryimage" src="media/berryitself.png" alt="Picked Berry" style="display: none;" />

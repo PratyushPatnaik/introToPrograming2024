@@ -15,8 +15,7 @@
     <div class="center-container">
       <div class="nes-container is-rounded is-dark">
         <h1>
-          You go upon your quest to find your time machine when u stumble across
-          a berry bush! What do you do?
+          Now you see a tree! What do you do?
         </h1>
       </div>
       <div class="text">
@@ -60,8 +59,11 @@
     </button>
 
     <div class="button-container">
-      <button type="button" class="nes-btn is-warning">Cut Tree</button>
+      <button type="button" class="nes-btn is-warning" id="pickTreesButton">Cut Tree</button>
       <button type="button" class="nes-btn is-warning">Ignore</button>
+    </div>
+    <div id="pickedTreesContainer" style="text-align: center;">
+      <img id="pickedTreeImage" class="treeimage" src="media/lumber.png" alt="Lumber" style="display: none;" />
     </div>
 
     <div id="pickedBerryContainer" style="text-align: center;">
@@ -79,7 +81,24 @@
     else {
       pickedBerryImage.style.display = "none"; // Hide otherwise
     }
-  });
+    });
+
+    localStorage.setItem("pickedLumber", "false");
+      // Get references to the button and the container
+      const pickTreesButton = document.getElementById("pickTreesButton");
+      const pickedTreeImage = document.getElementById("pickedTreeImage");
+      const pickedTreesContainer = document.getElementById("pickedTreesContainer");
+
+      // Add event listener for the "Pick berries" button
+      pickTreesButton.addEventListener("click", () => {
+        // Show the picked berry container
+        pickedTreeImage.style.display = "block";
+        pickedTreesContainer.style.display = "block";
+        console.log("Picked berry container made visible");
+
+        // Store information in localStorage for use in later screens
+        localStorage.setItem("pickedLumber", "true");
+      });
     </script>
   </body>
 </html>

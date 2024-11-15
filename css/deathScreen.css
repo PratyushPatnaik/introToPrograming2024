@@ -127,3 +127,19 @@ button {
     padding-bottom: 20px;
     padding-right: 25px;
 }
+
+.berryimage {
+    position: absolute;
+    right: 430px;
+    bottom: 80px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .treeimage {
+    position: absolute;
+    right: 370px;
+    bottom: 70px;
+    height: 50px;
+    width: 50px;
+  }

@@ -133,3 +133,11 @@ button {
     padding-bottom: 20px;
     padding-right: 25px;
 }
+
+.berryimage {
+    position: absolute;
+    right: 430px;
+    bottom: 80px;
+    height: 30px;
+    width: 30px;
+  }

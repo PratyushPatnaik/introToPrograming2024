@@ -54,5 +54,33 @@
     >
       Home
     </button>
+
+    <div id="pickedBerryContainer" style="text-align: center;">
+      <img id="pickedBerryImage" class="berryimage" src="media/berryitself.png" alt="Picked Berry" style="display: none;" />
+    </div>
+
+    <div id="pickedTreesContainer" style="text-align: center;">
+      <img id="pickedTreeImage" class="treeimage" src="media/lumber.png" alt="Lumber" style="display: none;" />
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+      const pickedBerryImage = document.getElementById("pickedBerryImage");
+  
+      // Check if the berry was picked
+      if (localStorage.getItem("pickedBerry") === "true") {
+        pickedBerryImage.style.display = "block"; // Show the image if it was picked
+      } 
+      else {
+        pickedBerryImage.style.display = "none"; // Hide otherwise
+      }
+      if (localStorage.getItem("pickedLumber") === "true") {
+        pickedTreeImage.style.display = "block"; // Show the image if it was picked
+      } 
+      else {
+        pickedTreeImage.style.display = "none"; // Hide otherwise
+      }
+    });
+    </script>
   </body>
 </html>
