@@ -63,5 +63,23 @@
       <button type="button" class="nes-btn is-warning">Cut Tree</button>
       <button type="button" class="nes-btn is-warning">Ignore</button>
     </div>
+
+    <div id="pickedBerryContainer" style="text-align: center;">
+      <img id="pickedBerryImage" class="berryimage" src="media/berryitself.png" alt="Picked Berry" style="display: none;" />
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const pickedBerryImage = document.getElementById("pickedBerryImage");
+
+    // Check if the berry was picked
+    if (localStorage.getItem("pickedBerry") === "true") {
+      pickedBerryImage.style.display = "block"; // Show the image if it was picked
+    } 
+    else {
+      pickedBerryImage.style.display = "none"; // Hide otherwise
+    }
+  });
+    </script>
   </body>
 </html>
