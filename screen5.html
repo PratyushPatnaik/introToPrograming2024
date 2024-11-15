@@ -3,44 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/treeScreen.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
-    <title>Jurassic Journey</title>
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/screen5.css" />
+    <title>Lab Scene</title>
   </head>
   <body>
-    <img src="media/main_character.png" class="mc" />
-    <img src="media/backpack.png" class="backpack" />
-
-    <div class="inv">
-      <p class="inv-item" id="food">Food: none</p>
-      <p class="inv-item" id="items">Items: none</p>
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          You go upon your quest to find your time machine when u stumble across
+          a berry bush! What do you do?
+        </h1>
+      </div>
+      <div class="text">
+        <h2>Progress</h2>
+      </div>
     </div>
 
-    <div class="text">
-      <h1>You see a small tree!</h1>
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="30"
+        max="80"
+        style="width: 57vh"
+      ></progress>
     </div>
 
-    <p class="decision">Do you...?</p>
-    <div class="choice">
-      <button class="choice-item" id="cut-down-tree">Cut it down</button>
-      <button class="choice-item">Leave it alone</button>
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
+
+    <h2 class="inventory-title">Inventory</h2>
+    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
+    <img src="/media/Tree.png" class="tree" alt="tree" />
+
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen6.html'"
+    >
+      Continue
+    </button>
+
+    <button
+      type="button"
+      class="nes-btn is-error center-bottom-right"
+      onclick="window.location.href='screen1.html'"
+    >
+      Stop
+    </button>
+
+    <div class="button-container">
+      <button type="button" class="nes-btn is-warning">Cut Tree</button>
+      <button type="button" class="nes-btn is-warning">Ignore</button>
     </div>
-
-    <img class="tree" src="media/Tree.png" />
-
-    <a href="screen6.html">
-      <button class="nextScreen">Follow Trail</button>
-    </a>
-
-    <a href="screen1.html">
-      <button class="stop">STOP</button>
-    </a>
-
-    <script src="JavaScript/tree.js"></script>
   </body>
 </html>

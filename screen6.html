@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 
-
 <title>Jurassic Journey</title>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/screen5.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
- </head>
-
-  <body>
-    <style>
-      body {
-        background-image: url(media/smalldinousaur\ screens.jpg);
-        background-repeat: no-repeat;
-      }
-
-      img {
-        display: block;
-      }
-    </style>
-    <img class="img-mc" src="media/main character.png" />
-
-    <button class="runbutton">Run Away</button>
-    <button class="fightbutton">Fight it</button>
-
-    <p class="loudSound">You see a dinosaur!.....</p>
-    <p class="decision">Do you...?</p>
-
-    <img
-      class="dino-img"
-      src="media/png-clipart-cute-little-dinosaur-green-cartoon-thumbnail-removebg-preview.png"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/rexScreen.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
     />
-    <img class="backpack-img" src="media/backpack.removebg-preview.png" />
+  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+        rel="stylesheet"
+      />
+      <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+      <link rel="stylesheet" href="css/screen5.css" />
+      <title>Lab Scene</title>
+    </head>
+    <body>
+      <div class="center-container">
+        <div class="nes-container is-rounded is-dark">
+          <h1>
+            You are on your quest to find the time machine, when you run into a
+            baby dinosour. What do you do?
+          </h1>
+        </div>
+        <div class="text">
+          <h2>Progress</h2>
+        </div>
+      </div>
 
-    <p class="foodinv">Food: None</p>
-    <p class="itemsinv">Items: None</p>
-    <a href="screen7choice.html">
-      <button class="nextScreen">Follow Trail</button>
-    </a>
+      <div class="bottom-progress-bar">
+        <progress
+          class="nes-progress is-success"
+          value="40"
+          max="80"
+          style="width: 57vh"
+        ></progress>
+      </div>
 
-    <a href="screen1.html">
-      <button class="stop">STOP</button>
-    </a>
-  </body>
+      <img
+        src="/media/main char.png"
+        class="main-character"
+        alt="main_character"
+      />
+
+      <h2 class="inventory-title">Inventory</h2>
+      <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
+      <img
+        src="/media/png-clipart-cute-little-dinosaur-green-cartoon-thumbnail-removebg-preview.png"
+        class="dinosour"
+        alt="dinosour"
+      />
+
+      <button
+        type="button"
+        class="nes-btn is-primary center-bottom"
+        onclick="window.location.href='screen7choice.html'"
+      >
+        Continue
+      </button>
+
+      <button
+        type="button"
+        class="nes-btn is-error center-bottom-right"
+        onclick="window.location.href='screen1.html'"
+      >
+        Stop
+      </button>
+
+      <div class="button-container">
+        <button type="button" class="nes-btn is-warning">Encounter</button>
+        <button type="button" class="nes-btn is-warning">Ignore</button>
+      </div>
+    </body>
+  </html>
 </html>

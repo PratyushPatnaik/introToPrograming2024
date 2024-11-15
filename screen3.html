@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/introscreen.css" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-<html>
-  <head> </head>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/introscreen.css" />
+    <title>Lab Scene</title>
+  </head>
   <body>
-    <style>
-      body {
-        background-image: url(media/yessa\ -\ Copy.jpg);
-        background-repeat: no-repeat;
-      }
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          Woah where am I? Where did my time machine go? I need to find it back!
+        </h1>
+      </div>
+      <div class="text">
+        <h2>Progress</h2>
+      </div>
+    </div>
 
-      img {
-        display: block;
-      }
-    </style>
-    <img class="img-mc" src="media/main character.png" />
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="15"
+        max="80"
+        style="width: 57vh"
+      ></progress>
+    </div>
 
-    <p class="whereAmI">
-      Wow where am I? <br />
-      And where did my time machine go? <br />
-      I need to find it back.
-    </p>
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
 
-    <img class="backpack-img" src="media/backpack.removebg-preview.png" />
+    <h2 class="inventory-title">Inventory</h2>
+    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
 
-    <p class="foodinv">Food: None</p>
-    <p class="itemsinv">Items: None</p>
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen4.html'"
+    >
+      Continue
+    </button>
 
-    <a href="screen4.html">
-      <button class="nextScreen">Follow Trail</button>
-    </a>
-
-    <a href="screen1.html">
-      <button class="stop">STOP</button>
-    </a>
+    <button
+      type="button"
+      class="nes-btn is-error center-bottom-right"
+      onclick="window.location.href='screen1.html'"
+    >
+      Stop
+    </button>
   </body>
 </html>

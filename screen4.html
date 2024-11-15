@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Sets the character encoding for the document -->
     <meta charset="UTF-8" />
-    <!-- Sets the viewport to make the website responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Links to the CSS file for styling -->
-    <link href="css/berryScreen.css" rel="stylesheet" type="text/css" />
-    <!-- Preconnects to Google Fonts to load fonts efficiently -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Links to the Google font "VT323" to use on this page -->
     <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
-    <!-- Sets the page title -->
-    <title>Jurassic Journey</title>
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/berryScreen.css" />
+    <title>Lab Scene</title>
   </head>
   <body>
-    
-    <!-- This code imports the image for the main character, which is used in the screen -->
-    <img src="media/main_character.png" class="mc" />
-
-    <img src="media/backpack.png" class="backpack" />
-
-    <!-- Inventory display area -->
-    <div class="inv">
-      <p class="inv-item" id="food">Food: none</p>
-      <p class="inv-item" id="items">Items: none</p>
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          You go upon your quest to find your time machine when u stumble across
+          a berry bush! What do you do?
+        </h1>
+      </div>
+      <div class="text">
+        <h2>Progress</h2>
+      </div>
     </div>
 
-    <!-- Text display area showing the current scene description -->
-    <div class="text">
-      <h1>You see a berry bush.</h1>
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="20"
+        max="80"
+        style="width: 57vh"
+      ></progress>
     </div>
 
-    <!-- Prompt for the user to make a decision -->
-    <p class="decision">Do you...?</p>
-    <div class="choice">
-      <button class="choice-item">Pick some berries</button>
-      <button class="choice-item">Leave it alone</button>
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
+
+    <h2 class="inventory-title">Inventory</h2>
+    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
+    <img src="/media/berry_bush.png" class="berry_bush" alt="berry_bush" />
+
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen5.html'"
+    >
+      Continue
+    </button>
+
+    <button
+      type="button"
+      class="nes-btn is-error center-bottom-right"
+      onclick="window.location.href='screen1.html'"
+    >
+      Stop
+    </button>
+
+    <div class="button-container">
+      <button type="button" class="nes-btn is-warning">Pick berries</button>
+      <button type="button" class="nes-btn is-warning">Ignore</button>
     </div>
-
-    <!-- Image of the berry bush in the scene -->
-    <img class="bush" src="media/berry_bush.png" />
-
-    <!-- Button to move to the next screen, wrapped in a link to "screen5.html" -->
-    <a href="screen5.html">
-      <button class="nextScreen">Follow Trail</button>
-    </a>
-
-    <!-- Button to stop the game, linking back to "screen1.html" -->
-    <a href="screen1.html">
-      <button class="stop">STOP</button>
-    </a>
-
-    <script src="JavaScript/berries.js"></script>
-
-    <!-- Updated file name -->
   </body>
 </html>
