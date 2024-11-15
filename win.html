@@ -8,16 +8,13 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/riverscreen1.css" />
+    <link rel="stylesheet" href="css/screen3.css" />
     <title>Lab Scene</title>
   </head>
   <body>
     <div class="center-container">
       <div class="nes-container is-rounded is-dark">
-        <h1>
-          You must now cross the river, but do you have the wood to build a
-          boat?
-        </h1>
+        <h1>CONGRATS U BEAT THE GAME!! Thank You for playing</h1>
       </div>
       <div class="text">
         <h2>Progress</h2>
@@ -27,7 +24,7 @@
     <div class="bottom-progress-bar">
       <progress
         class="nes-progress is-success"
-        value="30"
+        value="15"
         max="80"
         style="width: 57vh"
       ></progress>
@@ -44,27 +41,18 @@
 
     <button
       type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen2.html'"
+    >
+      Try Again?
+    </button>
+
+    <button
+      type="button"
       class="nes-btn is-error center-bottom-right"
       onclick="window.location.href='screen1.html'"
     >
-      Stop
+      Home
     </button>
-
-    <div class="button-container">
-      <button
-        type="button"
-        class="nes-btn is-primary"
-        onclick="window.location.href='screen8river.html'"
-      >
-        Build Wood Boat
-      </button>
-      <button
-        type="button"
-        class="nes-btn is-warning"
-        onclick="window.location.href='screen8dino.html'"
-      >
-        Different Route
-      </button>
-    </div>
   </body>
 </html>

@@ -18,7 +18,7 @@ samp {
 body {
   margin: 0; /* Remove default margin */
   height: 100vh; /* Ensure full viewport height */
-  background-image: url(/media/river\ background.jpg);
+  background-image: url(/media/tree\ background.png);
   background-attachment: fixed; /* Keeps the background image fixed */
   background-size: cover; /* Ensure the image covers the entire screen */
   background-position: center; /* Centers the image */
@@ -75,7 +75,7 @@ body::before {
 .main-character {
   transform: scale(1.3); /* scale 1.1x bigger */
   margin-top: -4vh;
-  margin-left: -20vh; /* Move character left by 10vh */
+  margin-left: -10vh; /* Move character left by 10vh */
 }
 
 .text {
@@ -131,6 +131,14 @@ body::before {
   color: white; /* Adjust the text color */
 }
 
+.dino {
+  position: absolute;
+  right: 89vh; /* Aligns the image to the right side of the screen */
+  top: 52%; /* Vertically centers the image on the screen */
+  width: 10vw; /* Adjusts the size of the image */
+  transform: scale(1.9); /* Optional: Additional scaling */
+}
+
 .button-container {
   display: flex;
   flex-direction: column; /* Arrange buttons vertically */
@@ -138,38 +146,19 @@ body::before {
   position: fixed;
   bottom: 20px; /* Position the container at the bottom */
   right: 10vh; /* Position the container from the right */
-  gap: 50px; /* Space between the buttons */
+  gap: 30px; /* Space between the buttons */
 }
 
 .button-container .nes-btn {
   padding: 15px 30px; /* Increase button padding */
-  transform: scale(1.3); /* Scale buttons to make them bigger */
+  transform: scale(1.2); /* Scale buttons to make them bigger */
   width: 22vh; /* Set a specific width for the button */
 }
 
 .button-container .nes-btn.is-warning {
   font-size: 0.8rem; /* Increase button font size */
   padding: 15px 30px; /* Increase button padding */
-  transform: scale(1.3); /* Scale buttons to make them bigger */
+  transform: scale(1.1); /* Scale buttons to make them bigger */
   bottom: 30vh;
-  right: 50vh;
-}
-
-.button-container .nes-btn.nes-btn.is-primary {
-  font-size: 0.8rem; /* Increase button font size */
-  padding: 15px 30px; /* Increase button padding */
-  transform: scale(1.3); /* Scale buttons to make them bigger */
-  bottom: 30vh;
-  right: 50vh;
-}
-
-.boat {
-  display: block; /* Ensure it behaves like a block for centering */
-  margin: 0 auto; /* Horizontally center with auto margins */
-  position: absolute; /* If you need to control vertical position */
-  top: 65%; /* Center vertically */
-  left: 40%; /* Center horizontally */
-  transform: scale(1.8);
-  width: 200px; /* Optional: adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
+  right: 30vh;
 }

@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-
-
-<title>Jurassic Journey</title>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jurassic Journey</title>
-        <link rel="stylesheet" href="css/riverscreen2.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/riverscreen2.css" />
+    <title>Lab Scene</title>
+  </head>
   <body>
-    <img class="img-mc" src="media/main character.png" />
-    <img class="backpack" src="media/backpack.removebg-preview.png">
-    <img class="boatimage" src="media/boatimage-removebg-preview.png">
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          NICE! you have the wood to make a boat, now all you have to do it
+          cross!
+        </h1>
+      </div>
+      <div class="text">
+        <h2>Progress</h2>
+      </div>
+    </div>
 
-    <p class="boatbuilt">Nice! You built a boat. Use it to cross the river</p>
-    <p class="foodinv">Food: None</p>
-    <p class="itemsinv">Items: None</p>
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="30"
+        max="80"
+        style="width: 57vh"
+      ></progress>
+    </div>
 
-    <button class="crosstheriver">Cross the river!</button>
-    <a href="screen1.html">
-      <button class="stop">STOP</button>
-    </a>
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
+
+    <h2 class="inventory-title">Inventory</h2>
+    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
+    <img src="/media/boatimage-removebg-preview.png" class="boat" alt="boat" />
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='win.html'"
+    >
+      Continue
+    </button>
+
+    <button
+      type="button"
+      class="nes-btn is-error center-bottom-right"
+      onclick="window.location.href='screen1.html'"
+    >
+      Stop
+    </button>
   </body>
 </html>

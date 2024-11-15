@@ -18,7 +18,7 @@ samp {
 body {
   margin: 0; /* Remove default margin */
   height: 100vh; /* Ensure full viewport height */
-  background-image: url(/media/tree\ background.png);
+  background-image: url(/media/trex\ background.png);
   background-attachment: fixed; /* Keeps the background image fixed */
   background-size: cover; /* Ensure the image covers the entire screen */
   background-position: center; /* Centers the image */
@@ -37,7 +37,7 @@ body::before {
     0,
     0,
     0,
-    0.6
+    0.5
   ); /* Lower opacity value for a lighter overlay */
   z-index: -1;
 }
@@ -74,8 +74,8 @@ body::before {
 
 .main-character {
   transform: scale(1.3); /* scale 1.1x bigger */
-  margin-top: -4vh;
-  margin-left: -10vh; /* Move character left by 10vh */
+  margin-top: -8vh;
+  margin-left: -28vh; /* Move character left by 10vh */
 }
 
 .text {
@@ -131,12 +131,12 @@ body::before {
   color: white; /* Adjust the text color */
 }
 
-.dinosour {
+.trex {
   position: absolute;
-  right: 89vh; /* Aligns the image to the right side of the screen */
+  right: 96vh; /* Aligns the image to the right side of the screen */
   top: 52%; /* Vertically centers the image on the screen */
   width: 10vw; /* Adjusts the size of the image */
-  transform: scale(1.9); /* Optional: Additional scaling */
+  transform: scale(2.3); /* Optional: Additional scaling */
 }
 
 .button-container {

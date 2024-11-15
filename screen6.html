@@ -1,87 +1,71 @@
 <!DOCTYPE html>
-
-<title>Jurassic Journey</title>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/rexScreen.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/screen6.css" />
+    <title>Lab Scene</title>
   </head>
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-        rel="stylesheet"
-      />
-      <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-      <link rel="stylesheet" href="css/screen5.css" />
-      <title>Lab Scene</title>
-    </head>
-    <body>
-      <div class="center-container">
-        <div class="nes-container is-rounded is-dark">
-          <h1>
-            You are on your quest to find the time machine, when you run into a
-            baby dinosour. What do you do?
-          </h1>
-        </div>
-        <div class="text">
-          <h2>Progress</h2>
-        </div>
+  <body>
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          You go upon your quest to find your time machine when u stumble across
+          a berry bush! What do you do?
+        </h1>
       </div>
-
-      <div class="bottom-progress-bar">
-        <progress
-          class="nes-progress is-success"
-          value="40"
-          max="80"
-          style="width: 57vh"
-        ></progress>
+      <div class="text">
+        <h2>Progress</h2>
       </div>
+    </div>
 
-      <img
-        src="/media/main char.png"
-        class="main-character"
-        alt="main_character"
-      />
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="30"
+        max="80"
+        style="width: 57vh"
+      ></progress>
+    </div>
 
-      <h2 class="inventory-title">Inventory</h2>
-      <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
-      <img
-        src="/media/png-clipart-cute-little-dinosaur-green-cartoon-thumbnail-removebg-preview.png"
-        class="dinosour"
-        alt="dinosour"
-      />
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
 
-      <button
-        type="button"
-        class="nes-btn is-primary center-bottom"
-        onclick="window.location.href='screen7choice.html'"
-      >
-        Continue
-      </button>
+    <h2 class="inventory-title">Inventory</h2>
+    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
+    <img
+      src="/media/png-clipart-cute-little-dinosaur-green-cartoon-thumbnail-removebg-preview.png"
+      class="dino"
+      alt="dino"
+    />
 
-      <button
-        type="button"
-        class="nes-btn is-error center-bottom-right"
-        onclick="window.location.href='screen1.html'"
-      >
-        Stop
-      </button>
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen7choice.html'"
+    >
+      Continue
+    </button>
 
-      <div class="button-container">
-        <button type="button" class="nes-btn is-warning">Encounter</button>
-        <button type="button" class="nes-btn is-warning">Ignore</button>
-      </div>
-    </body>
-  </html>
+    <button
+      type="button"
+      class="nes-btn is-error center-bottom-right"
+      onclick="window.location.href='screen1.html'"
+    >
+      Stop
+    </button>
+
+    <div class="button-container">
+      <button type="button" class="nes-btn is-warning">Encounter</button>
+      <button type="button" class="nes-btn is-warning">Ignore</button>
+    </div>
+  </body>
 </html>

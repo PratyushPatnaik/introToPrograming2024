@@ -3,47 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/darkScreen.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
-    <title>Jurassic Journey</title>
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/screen8dino.css" />
+    <title>Lab Scene</title>
   </head>
   <body>
-    <img src="media/main_character.png" class="mc" />
-
-    <img src="media/backpack.png" class="backpack" />
-
-    <div class="inv">
-      <p class="inv-item">Food: none</p>
-      <p class="inv-item">Items: none</p>
+    <div class="center-container">
+      <div class="nes-container is-rounded is-dark">
+        <h1>
+          OH NO! You skipped through the river and now you have to face the
+          TREX! What do you do? (think carefully)
+        </h1>
+      </div>
+      <div class="text">
+        <h2>Progress</h2>
+      </div>
     </div>
 
-    <div class="text">
-      <h1 class="text-item">It's getting dark... you should set up camp.</h1>
-      <h1 class="text-item">You hear a quiet noise...</h1>
+    <div class="bottom-progress-bar">
+      <progress
+        class="nes-progress is-success"
+        value="20"
+        max="80"
+        style="width: 57vh"
+      ></progress>
     </div>
 
-    <p class="decision">Do you...?</p>
-    <div class="choice">
-      <a href="screen9.html">
-        <button class="choice-item">Check it out</button>
-      </a>
+    <img
+      src="/media/main char.png"
+      class="main-character"
+      alt="main_character"
+    />
 
-      <a href="screen11(Win).html">
-        <button class="choice-item">Leave it alone</button>
-      </a>
+    <h2 class="inventory-title">Inventory</h2>
+    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
+    <img src="/media/t_rex.png" class="trex" alt="berry_bush" />
+
+    <button
+      type="button"
+      class="nes-btn is-primary center-bottom"
+      onclick="window.location.href='screen5.html'"
+    >
+      Continue
+    </button>
+
+    <button
+      type="button"
+      class="nes-btn is-error center-bottom-right"
+      onclick="window.location.href='screen1.html'"
+    >
+      Stop
+    </button>
+
+    <div class="button-container">
+      <button
+        type="button"
+        class="nes-btn is-warning"
+        onclick="window.location.href='screen10death.html'"
+      >
+        Encoutner
+      </button>
+      <button
+        type="button"
+        class="nes-btn is-warning"
+        onclick="window.location.href='win.html'"
+      >
+        Try to escape
+      </button>
     </div>
-
-    <a href="screen9.html">
-      <button class="nextScreen">Follow Trail</button>
-    </a>
-
-    <a href="screen1.html">
-      <button class="stop">STOP</button>
-    </a>
   </body>
 </html>
