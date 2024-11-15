@@ -34,14 +34,14 @@
     </div>
 
     <img
-      src="/media/main char.png"
+      src="media/main char.png"
       class="main-character"
       alt="main_character"
     />
 
     <h2 class="inventory-title">Inventory</h2>
-    <img src="/media/bar.png" class="inventory_blank" alt="inventory" />
-    <img src="/media/berry_bush.png" class="berry_bush" alt="berry_bush" />
+    <img src="media/bar.png" class="inventory_blank" alt="inventory" />
+    <img src="media/berry_bush.png" class="berry_bush" alt="berry_bush" />
 
     <button
       type="button"
@@ -63,5 +63,23 @@
       <button type="button" class="nes-btn is-warning">Pick berries</button>
       <button type="button" class="nes-btn is-warning">Ignore</button>
     </div>
+
+
+    <script>
+      // Select elements
+      const foodInventory = document.getElementById('foodInventory');
+      const addBerriesButton = document.getElementById('addBerriesButton');
+  
+      // Initialize inventory from localStorage or set default
+      const savedFood = localStorage.getItem('food');
+      foodInventory.textContent = savedFood ? `Food: ${savedFood}` : "Food: none";
+  
+      // Add berries to the inventory
+      addBerriesButton.addEventListener('click', () => {
+        const food = "Berries"; // Update food inventory
+        foodInventory.textContent = `Food: ${food}`; // Update UI
+        localStorage.setItem('food', food); // Save to localStorage
+      });
+    </script>
   </body>
 </html>
