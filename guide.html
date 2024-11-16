@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/screen2.css" />
+    <link rel="stylesheet" href="css/guide.css" />
     <title>Lab Scene</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
         <ul>
           <li>
             <a href="screen1.html"><i class="fas fa-tv"></i>Home</a>
-            <a href="guide.html"><i class="far fa-user"></i>Guide</a>
+            <a href="#"><i class="far fa-user"></i>Guide</a>
             <h4>GAME</h4>
             <a href="screen2.html"><i class="far fa-gripfire"></i>Lab Screen</a>
             <a href="screen3.html"
@@ -50,52 +50,23 @@
         </ul>
       </div>
     </label>
-    <div class="center-container">
-      <div class="nes-container is-rounded is-dark">
-        <h1>
-          After all my hard work it all comes down to this! Time to test this
-          out...
-        </h1>
-      </div>
-      <div class="text">
-        <h2>Progress</h2>
-      </div>
+
+    <div class="button-container">
+      <button
+        type="button"
+        class="nes-btn is-primary"
+        onclick="window.location.href='screen2.html'"
+      >
+        Start
+      </button>
+
+      <button
+        type="button"
+        class="nes-btn is-error"
+        onclick="window.location.href='screen1.html'"
+      >
+        Home
+      </button>
     </div>
-
-    <div class="bottom-progress-bar">
-      <progress
-        class="nes-progress is-success"
-        value="10"
-        max="80"
-        style="width: 57vh"
-      ></progress>
-    </div>
-
-    <img
-      src="media/main char.png"
-      class="main-character"
-      alt="main_character"
-    />
-
-    <h2 class="inventory-title">Inventory</h2>
-    <img src="media/bar.png" class="inventory_blank" alt="inventory" />
-
-    <button
-      type="button"
-      class="nes-btn is-primary center-bottom"
-      onclick="window.location.href='screen3.html'"
-    >
-      Test
-    </button>
-
-    <button
-      type="button"
-      class="nes-btn is-error center-bottom-right"
-      onclick="window.location.href='screen1.html'"
-    >
-      Stop
-    </button>
-
-    <img src="media/time_machine.png" class="time-machine" />
   </body>
 </html>
