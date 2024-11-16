@@ -28,15 +28,24 @@
             <a href="screen1.html"><i class="fas fa-tv"></i>Home</a>
             <a href="#"><i class="far fa-user"></i>Guide</a>
             <h4>GAME</h4>
-            <a href="screen2.html"><i class="far fa-gripfire"></i>Screen 1</a>
-            <a href="screen3.html"><i class="far fa-comments"></i>Screen 2</a>
-            <a href="screen4.html"><i class="far fa-folder"></i>Screen 3</a>
-            <a href="screen5.html"
-              ><i class="far fa-address-book"></i>Screen 4</a
+            <a href="screen2.html"><i class="far fa-gripfire"></i>Lab Screen</a>
+            <a href="screen3.html"
+              ><i class="far fa-comments"></i>Jungle Screen</a
             >
-            <a href="screen6.html"><i class="far fa-heart"></i>Screen 5</a>
-            <a href="screen7choice.html"><i class="fas fa-tv"></i>Screen 6</a>
-            <a href="screen8dino.html"><i class="fas fa-tv"></i>Screen 7</a>
+            <a href="screen4.html"><i class="far fa-folder"></i>Bush Screen</a>
+            <a href="screen5.html"
+              ><i class="far fa-address-book"></i>Tree Screen</a
+            >
+            <a href="screen6.html"><i class="far fa-heart"></i>Dino Screen</a>
+            <a href="screen7choice.html"
+              ><i class="fas fa-tv"></i>River Screen</a
+            >
+            <a href="screen8dino.html"
+              ><i class="fas fa-tv"></i>River Choice 1</a
+            >
+            <a href="screen8river.html"
+              ><i class="fas fa-tv"></i>River Choice 2</a
+            >
           </li>
         </ul>
       </div>
@@ -89,9 +98,12 @@
       <button type="button" class="nes-btn is-warning" id="pickTreesButton">
         Cut Tree
       </button>
-      <button type="button" class="nes-btn is-warning">Ignore</button>
+      <button type="button" class="nes-btn is-warning" id="ignoreButton">
+        Ignore
+      </button>
     </div>
-    <div id="pickedTreesContainer" style="text-align: center">
+
+    <div id="pickedTreesContainer" style="display: none; text-align: center">
       <img
         id="pickedTreeImage"
         class="treeimage"
@@ -121,25 +133,55 @@
         } else {
           pickedBerryImage.style.display = "none"; // Hide otherwise
         }
-      });
 
-      localStorage.setItem("pickedLumber", "false");
-      // Get references to the button and the container
-      const pickTreesButton = document.getElementById("pickTreesButton");
-      const pickedTreeImage = document.getElementById("pickedTreeImage");
-      const pickedTreesContainer = document.getElementById(
-        "pickedTreesContainer"
-      );
+        localStorage.setItem("pickedLumber", "false");
+        // Get references to the button and the container
+        const pickTreesButton = document.getElementById("pickTreesButton");
+        const ignoreButton = document.getElementById("ignoreButton");
+        const pickedTreeImage = document.getElementById("pickedTreeImage");
+        const pickedTreesContainer = document.getElementById(
+          "pickedTreesContainer"
+        );
+        const treeH1 = document.querySelector(".nes-container h1"); // The <h1> element
 
-      // Add event listener for the "Pick berries" button
-      pickTreesButton.addEventListener("click", () => {
-        // Show the picked berry container
-        pickedTreeImage.style.display = "block";
-        pickedTreesContainer.style.display = "block";
-        console.log("Picked berry container made visible");
+        // Add event listener to the "Cut Tree" button
+        pickTreesButton.addEventListener("click", () => {
+          // Update the text of the <h1> when the "Cut Tree" button is clicked
+          treeH1.textContent =
+            "Wood has been added to your inventory. Click Continue to advance.";
 
-        // Store information in localStorage for use in later screens
-        localStorage.setItem("pickedLumber", "true");
+          // Show the wood image in the inventory
+          pickedTreeImage.style.display = "block"; // Make the wood image visible
+          pickedTreesContainer.style.display = "block"; // Show the container for the image
+
+          // Store that the tree has been cut in localStorage for persistence
+          localStorage.setItem("pickedLumber", "true");
+        });
+
+        // Add event listener to the "Ignore" button
+        ignoreButton.addEventListener("click", () => {
+          // Update the text of the <h1> when the "Ignore" button is clicked
+          treeH1.textContent =
+            "Tree has been ignored. Click Continue to advance.";
+
+          // Hide the wood image in the inventory (if it was visible)
+          pickedTreeImage.style.display = "none";
+          pickedTreesContainer.style.display = "none"; // Hide the container for the image
+
+          // Store that the tree was ignored in localStorage for persistence
+          localStorage.setItem("pickedLumber", "false");
+        });
+
+        // Check if the wood has been picked or ignored when loading the page
+        if (localStorage.getItem("pickedLumber") === "true") {
+          // Only display the wood image in the inventory if it's been cut already
+          pickedTreeImage.style.display = "block";
+          pickedTreesContainer.style.display = "block";
+        } else {
+          // Hide the wood image if it's been ignored
+          pickedTreeImage.style.display = "none";
+          pickedTreesContainer.style.display = "none";
+        }
       });
     </script>
   </body>

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check if the button exists
   if (!pickBerriesButton) {
     console.log("Pick berries button not found!");
+
     return;
   } else {
     console.log("Pick berries button found!"); // This should log when the button is found

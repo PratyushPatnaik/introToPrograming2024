@@ -61,7 +61,7 @@ h4 {
 
 ul li {
   list-style: none;
-  font-size: 2vh;
+  font-size: 1.8vh;
   margin-bottom: 1vh;
 }
 
@@ -72,6 +72,7 @@ ul li a {
   display: block;
   text-transform: capitalize;
   text-decoration: none;
+  margin-top: 2vh;
   transition: 0.2s ease-out;
 }
 
@@ -186,12 +187,6 @@ input:checked ~ .overlay {
 /* Prevent content interaction when menu is open */
 body.menu-open {
   overflow: hidden; /* Disable scrolling */
-}
-/* Wrapper for centering the nes-container */
-.center-container {
-  display: flex; /* Enable flexbox layout for centering */
-  justify-content: center; /* Center horizontally */
-  margin-top: 5vh;
 }
 
 body {
@@ -344,16 +339,16 @@ body::before {
 
 .berryimage {
   position: absolute;
-  right: 430px;
-  bottom: 80px;
+  right: 480px;
+  bottom: 25px;
   height: 30px;
   width: 30px;
 }
 
 .treeimage {
   position: absolute;
-  right: 370px;
-  bottom: 70px;
+  right: 418px;
+  bottom: 10px;
   height: 50px;
   width: 50px;
 }

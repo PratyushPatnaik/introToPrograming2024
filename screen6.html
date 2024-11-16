@@ -28,24 +28,33 @@
             <a href="screen1.html"><i class="fas fa-tv"></i>Home</a>
             <a href="#"><i class="far fa-user"></i>Guide</a>
             <h4>GAME</h4>
-            <a href="screen2.html"><i class="far fa-gripfire"></i>Screen 1</a>
-            <a href="screen3.html"><i class="far fa-comments"></i>Screen 2</a>
-            <a href="screen4.html"><i class="far fa-folder"></i>Screen 3</a>
-            <a href="screen5.html"
-              ><i class="far fa-address-book"></i>Screen 4</a
+            <a href="screen2.html"><i class="far fa-gripfire"></i>Lab Screen</a>
+            <a href="screen3.html"
+              ><i class="far fa-comments"></i>Jungle Screen</a
             >
-            <a href="screen6.html"><i class="far fa-heart"></i>Screen 5</a>
-            <a href="screen7choice.html"><i class="fas fa-tv"></i>Screen 6</a>
-            <a href="screen8dino.html"><i class="fas fa-tv"></i>Screen 7</a>
+            <a href="screen4.html"><i class="far fa-folder"></i>Bush Screen</a>
+            <a href="screen5.html"
+              ><i class="far fa-address-book"></i>Tree Screen</a
+            >
+            <a href="screen6.html"><i class="far fa-heart"></i>Dino Screen</a>
+            <a href="screen7choice.html"
+              ><i class="fas fa-tv"></i>River Screen</a
+            >
+            <a href="screen8dino.html"
+              ><i class="fas fa-tv"></i>River Choice 1</a
+            >
+            <a href="screen8river.html"
+              ><i class="fas fa-tv"></i>River Choice 2</a
+            >
           </li>
         </ul>
       </div>
     </label>
     <div class="center-container">
       <div class="nes-container is-rounded is-dark">
-        <h1>
-          You go upon your quest to find your time machine when u stumble across
-          a berry bush! What do you do?
+        <h1 id="dinoH1">
+          You are about halfway there, when a baby dino encounters you... What
+          do you do?
         </h1>
       </div>
       <div class="text">
@@ -56,7 +65,7 @@
     <div class="bottom-progress-bar">
       <progress
         class="nes-progress is-success"
-        value="30"
+        value="40"
         max="80"
         style="width: 57vh"
       ></progress>
@@ -97,7 +106,9 @@
       <button type="button" class="nes-btn is-warning" id="encounter">
         Encounter
       </button>
-      <button type="button" class="nes-btn is-warning">Ignore</button>
+      <button type="button" class="nes-btn is-warning" id="ignore">
+        Ignore
+      </button>
     </div>
 
     <div id="pickedBerryContainer" style="text-align: center">
@@ -123,23 +134,35 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const pickedBerryImage = document.getElementById("pickedBerryImage");
-        const encounter = document.getElementById("encounter");
-        const dino = document.getElementById("dino");
-        encounter.addEventListener("click", () => {
-          dino.style.display = "none";
+        const pickedTreeImage = document.getElementById("pickedTreeImage");
+        const encounterButton = document.getElementById("encounter");
+        const ignoreButton = document.getElementById("ignore");
+        const dinoH1 = document.getElementById("dinoH1");
+
+        // Initial display logic
+        if (localStorage.getItem("pickedBerry") === "true") {
+          pickedBerryImage.style.display = "block";
+        } else {
+          pickedBerryImage.style.display = "none";
+        }
+
+        if (localStorage.getItem("pickedLumber") === "true") {
+          pickedTreeImage.style.display = "block";
+        } else {
+          pickedTreeImage.style.display = "none";
+        }
+
+        // Encounter button event listener
+        encounterButton.addEventListener("click", () => {
+          dinoH1.textContent =
+            "The dinosaur was friendly to you and decided to carry you through. Click continue to advance.";
         });
 
-        // Check if the berry was picked
-        if (localStorage.getItem("pickedBerry") === "true") {
-          pickedBerryImage.style.display = "block"; // Show the image if it was picked
-        } else {
-          pickedBerryImage.style.display = "none"; // Hide otherwise
-        }
-        if (localStorage.getItem("pickedLumber") === "true") {
-          pickedTreeImage.style.display = "block"; // Show the image if it was picked
-        } else {
-          pickedTreeImage.style.display = "none"; // Hide otherwise
-        }
+        // Ignore button event listener
+        ignoreButton.addEventListener("click", () => {
+          dinoH1.textContent =
+            "You ignored the dinosaur. Click continue to advance.";
+        });
       });
     </script>
   </body>

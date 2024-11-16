@@ -28,22 +28,31 @@
             <a href="screen1.html"><i class="fas fa-tv"></i>Home</a>
             <a href="#"><i class="far fa-user"></i>Guide</a>
             <h4>GAME</h4>
-            <a href="screen2.html"><i class="far fa-gripfire"></i>Screen 1</a>
-            <a href="screen3.html"><i class="far fa-comments"></i>Screen 2</a>
-            <a href="screen4.html"><i class="far fa-folder"></i>Screen 3</a>
-            <a href="screen5.html"
-              ><i class="far fa-address-book"></i>Screen 4</a
+            <a href="screen2.html"><i class="far fa-gripfire"></i>Lab Screen</a>
+            <a href="screen3.html"
+              ><i class="far fa-comments"></i>Jungle Screen</a
             >
-            <a href="screen6.html"><i class="far fa-heart"></i>Screen 5</a>
-            <a href="screen7choice.html"><i class="fas fa-tv"></i>Screen 6</a>
-            <a href="screen8dino.html"><i class="fas fa-tv"></i>Screen 7</a>
+            <a href="screen4.html"><i class="far fa-folder"></i>Bush Screen</a>
+            <a href="screen5.html"
+              ><i class="far fa-address-book"></i>Tree Screen</a
+            >
+            <a href="screen6.html"><i class="far fa-heart"></i>Dino Screen</a>
+            <a href="screen7choice.html"
+              ><i class="fas fa-tv"></i>River Screen</a
+            >
+            <a href="screen8dino.html"
+              ><i class="fas fa-tv"></i>River Choice 1</a
+            >
+            <a href="screen8river.html"
+              ><i class="fas fa-tv"></i>River Choice 2</a
+            >
           </li>
         </ul>
       </div>
     </label>
     <div class="center-container">
       <div class="nes-container is-rounded is-dark">
-        <h1>
+        <h1 id="h1-text">
           You must now cross the river, but do you have the wood to build a
           boat?
         </h1>
@@ -56,7 +65,7 @@
     <div class="bottom-progress-bar">
       <progress
         class="nes-progress is-success"
-        value="30"
+        value="50"
         max="80"
         style="width: 57vh"
       ></progress>
@@ -80,11 +89,7 @@
     </button>
 
     <div class="button-container">
-      <button
-        type="button"
-        class="nes-btn is-primary"
-        onclick="window.location.href='screen8river.html'"
-      >
+      <button type="button" class="nes-btn is-primary" id="build-boat">
         Build Wood Boat
       </button>
       <button
@@ -118,18 +123,35 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const pickedBerryImage = document.getElementById("pickedBerryImage");
+        const h1Text = document.getElementById("h1-text");
+        const buildBoatButton = document.getElementById("build-boat");
+
+        // Check if the lumber is in the user's inventory
+        if (localStorage.getItem("pickedLumber") === "true") {
+          // If lumber exists in inventory, allow building boat and navigate to screen8river.html
+          buildBoatButton.addEventListener("click", () => {
+            window.location.href = "screen8river.html";
+          });
+        } else {
+          // If no lumber, update text to inform the user
+          buildBoatButton.addEventListener("click", () => {
+            h1Text.textContent =
+              "You don't have wood. Take the alternate route...";
+          });
+        }
 
         // Check if the berry was picked
+        const pickedBerryImage = document.getElementById("pickedBerryImage");
         if (localStorage.getItem("pickedBerry") === "true") {
-          pickedBerryImage.style.display = "block"; // Show the image if it was picked
+          pickedBerryImage.style.display = "block";
         } else {
-          pickedBerryImage.style.display = "none"; // Hide otherwise
+          pickedBerryImage.style.display = "none";
         }
+
         if (localStorage.getItem("pickedLumber") === "true") {
-          pickedTreeImage.style.display = "block"; // Show the image if it was picked
+          pickedTreeImage.style.display = "block"; // Show lumber if it was picked
         } else {
-          pickedTreeImage.style.display = "none"; // Hide otherwise
+          pickedTreeImage.style.display = "none"; // Hide lumber otherwise
         }
       });
     </script>

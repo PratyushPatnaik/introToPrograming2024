@@ -7,6 +7,7 @@ samp {
   font-family: "Press Start 2P", sans-serif;
   margin: 0; /* Remove default margin */
 }
+
 body {
   background-color: #fff;
 }
@@ -60,7 +61,7 @@ h4 {
 
 ul li {
   list-style: none;
-  font-size: 2vh;
+  font-size: 1.8vh;
   margin-bottom: 1vh;
 }
 
@@ -71,6 +72,7 @@ ul li a {
   display: block;
   text-transform: capitalize;
   text-decoration: none;
+  margin-top: 2vh;
   transition: 0.2s ease-out;
 }
 
@@ -337,8 +339,8 @@ body::before {
 
 .berryimage {
   position: absolute;
-  right: 430px;
-  bottom: 80px;
+  right: 480px;
+  bottom: 25px;
   height: 30px;
   width: 30px;
 }
